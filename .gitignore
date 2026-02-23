@@ -2,4 +2,4 @@ __pycache__/
 *.pyc
 /.venv
 knn_model.pkl
-/data
+/lab1/data
