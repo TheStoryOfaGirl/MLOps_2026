@@ -3,8 +3,11 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 import os
 
-os.makedirs("data/train")
-os.makedirs("data/test")
+if not os.path.exists('data/train'):
+    os.makedirs("data/train")
+
+if not os.path.exists('data/test'):
+    os.makedirs("data/test")
 
 iris = load_iris()
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)

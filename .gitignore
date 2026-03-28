@@ -3,3 +3,4 @@ __pycache__/
 /.venv
 knn_model.pkl
 /lab1/data
+.idea
