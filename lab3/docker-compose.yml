@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  iris-classifier:
+    build: .
+    container_name: iris-classifier-app
+    ports:
+      - "8000:8000"
+    restart: always
+    networks:
+      - iris-network
+
+networks:
+  iris-network:
+    driver: bridge
